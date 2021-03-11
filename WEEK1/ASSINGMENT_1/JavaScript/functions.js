@@ -1,7 +1,7 @@
 /**
  * In this Assingment basicly Gregeroin Year Converted into Hijri Year and vice versa.
- * Year Gregorian = Year Hijri X 0.97 + 622
- * Year Hijri = ( Year Gregorian - 622 ) X 1.03 
+ * Year Gregorian = Year Hijri X 32/33 + 622
+ * Year Hijri = ( Year Gregorian - 622 ) X 33/32
  */
 module.exports = yearConverter;
 

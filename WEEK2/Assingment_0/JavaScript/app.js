@@ -6,7 +6,7 @@
  * habilozcan@gmail.com 
  */
 
- const fs = require('fs');
+const fs = require('fs');
 
 try{
     const data = fs.readFileSync('/home/benutzer00/Desktop/HICODERS/MODUL3/WEEK2/Assingment_0/OrnekDosya.txt','utf-8');

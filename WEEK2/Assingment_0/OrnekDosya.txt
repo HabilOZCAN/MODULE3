@@ -1,0 +1,4 @@
+1.Bu calısmada node.js kullanılarak bir .txt dosyası içeriğinin console ekranına yazdırılması sağlanacaktır.
+2.Bugün biraz kar yağdı
+3.Yarın ne yağacak Allah bilir.
+4.Mutluyuz&Istekliyiz ve başaracağız =) 

@@ -1,12 +1,15 @@
 /**
- * oncelikle npm install xlsx komutu çalıştırılarak gereken json paket yüklendi.
+ * OrnekDosya.xlsx dosyanın içeriği oncelikli olarak boş olacaktır. Bu bakımdan önce  node write.js komutu ile
+ * ilgili dosyanın içini doldurunuz.
+ * BAŞLANGIC AŞAMASINDA ORNEKDOSYA.XLSX BOSTUR. BU NEDENLE LUTFEN ONCE JavaScript Dosya dizini içinde
+ * node write.js komutunu çalıştırın.
  */
 
 //Requiring the module
 const reader = require('xlsx');
 
 //reading our test file
-const file  = reader.readFile('/home/benutzer00/Desktop/HICODERS/MODUL3/WEEK2/Assingment_1/OrnekDosya.xlsx');
+const file  = reader.readFile('../OrnekDosya.xlsx');
 
 let data  = [];
 

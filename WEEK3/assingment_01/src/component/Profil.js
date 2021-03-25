@@ -1,3 +1,7 @@
+/**
+ * Bu calismada burada hazilamis oldugumuz profil dosyasi export edilmistir.
+ * habilozcan@gmail.com
+ */
 import './Profil.css';
 
 export default function Profil(){

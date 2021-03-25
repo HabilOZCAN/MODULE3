@@ -171,7 +171,7 @@ export default function Profil(){
             </table>
             <iframe src="https://www.youtube.com/embed/9YffrCViTVk"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen title='youtubemovie'></iframe>
+                allow="fullscreen" title='youtubemovie'></iframe>
         </main>
         <footer>
             <hr></hr>

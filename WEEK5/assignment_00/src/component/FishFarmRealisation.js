@@ -7,29 +7,38 @@ import {FishFarm} from './FishFarm';
  */
 
 export default function FishFarmRealisation() {
+
+    const FISH_FARM_RECORDS = FishFarm.length;
         
     const[stateIndex, setStateIndex] = useState(0);
 
     const[fish, setFish] = useState(FishFarm[0]);
 
     const next = ()=>{
-        if(stateIndex !== FishFarm.length)
+        if(stateIndex < FISH_FARM_RECORDS-1)
         {  
             let temp = stateIndex;
             temp++;
-           setStateIndex(temp); 
-           setFish(FishFarm[stateIndex]); 
-           console.log(stateIndex);
+            setStateIndex(temp); 
+            setFish(FishFarm[stateIndex]); 
+            console.log(stateIndex);
+        }else{
+            console.log(stateIndex);
+            setFish(FishFarm[stateIndex]); 
+           
         }
     }
     const pre = ()=>{
-        if(stateIndex!==0){
+        if(stateIndex > 0){
             let temp = stateIndex;
             temp--;
             setStateIndex(temp); 
             setFish(FishFarm[stateIndex]);
-             
             console.log(stateIndex);
+        }else {
+            console.log(stateIndex);
+            setFish(FishFarm[stateIndex]);
+           
         }
     }
    

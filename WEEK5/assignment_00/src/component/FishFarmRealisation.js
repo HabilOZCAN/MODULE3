@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import {FishFarm} from './FishFarm';
-
+/**
+ * state yapisi ile basit anlamda database'imiz olan balik cifligindeki kayitlara ait index numarasi button tiklamasi ile guncellenmekte
+ * daha sonra guncellenen bu deger ile gosterilecek kayit gene state yapisi kullanilarak guncellenerek browser ekranina yazdirilmaktadir.
+ * 
+ */
 
 export default function FishFarmRealisation() {
         
@@ -9,21 +13,22 @@ export default function FishFarmRealisation() {
     const[fish, setFish] = useState(FishFarm[0]);
 
     const next = ()=>{
-        if(stateIndex<FishFarm.length)
+        if(stateIndex !== FishFarm.length)
         {  
             let temp = stateIndex;
             temp++;
            setStateIndex(temp); 
-           setFish(FishFarm[stateIndex]);
+           setFish(FishFarm[stateIndex]); 
            console.log(stateIndex);
         }
     }
     const pre = ()=>{
-        if(stateIndex>0){
+        if(stateIndex!==0){
             let temp = stateIndex;
             temp--;
             setStateIndex(temp); 
             setFish(FishFarm[stateIndex]);
+             
             console.log(stateIndex);
         }
     }

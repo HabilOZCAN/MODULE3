@@ -1,6 +1,6 @@
 import {Words} from './Worts';
 
-const Shuffled = Words;//Words.sort(() => Math.random() - 0.5);
+const Shuffled = Words.sort(() => Math.random() - 0.5);
 
 export {Shuffled};
 

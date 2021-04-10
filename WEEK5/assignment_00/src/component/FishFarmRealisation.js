@@ -24,8 +24,7 @@ export default function FishFarmRealisation() {
             console.log(stateIndex);
         }else{
             console.log(stateIndex);
-            setFish(FishFarm[stateIndex]); 
-           
+            setFish(FishFarm[stateIndex]);         
         }
     }
     const pre = ()=>{

@@ -2,7 +2,7 @@
  *yapilan calismada 80'e kadar olan rakamarin ingilizce ve turkce karisliklarina iliskin bir test
  hazilanmistir. program sonunda sonuc alert uzerinde gosterilmektedir.  
  */
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './stylesHO.css';
 import {Shuffled} from './Shuffle';
 
@@ -20,16 +20,21 @@ export default function PageHO() {
     const [falseAnswers, setFalseAnswers] = useState(0);
     
 
-    const LoadData =()=>{
-        if(position ===80){
+    useEffect(() => {
+        LoadData(); 
+    },[]);
+
+    const LoadData = ()=>{
+        if(position === 80){
             alert(`Thank you for your participation you have ${trueAnswers} true answers and ${falseAnswers} false answers`);
             window.location.reload();    
         } else {
-        setPosition(position+4); }
+        setPosition(position+4); 
+        }       
         startPosition = position;
         endPosition = startPosition+4;
         tempChunk = Shuffled.slice(startPosition, endPosition);
-        setChunkWordList(tempChunk); 
+        setChunkWordList(tempChunk);
     }
  
     const NextClick = (e)=>{
@@ -59,7 +64,7 @@ export default function PageHO() {
                 <div className='mainScreenContainer'>
                     <h1>Word Card Game</h1>
                     <button className='next' onClick={NextClick}>Next</button>
-                    <div className='questionIndicator'>Question: {position/4+1}</div>
+                    <div className='questionIndicator'>Question: {position/4}</div>
                     <div className='qaContainer'>
                         <div className='question'>{chunkWordList[0].name}</div>
                         <div className='answer' onClick={ControlClick}>{chunkWordList[index[0]].meaning}</div>

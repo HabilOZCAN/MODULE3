@@ -19,7 +19,6 @@ export default function PageHO() {
     const [trueAnswers, setTrueAnswers] = useState(0);
     const [falseAnswers, setFalseAnswers] = useState(0);
     
-
     useEffect(() => {
         LoadData(); 
     },[]);

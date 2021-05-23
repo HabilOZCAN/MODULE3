@@ -2,13 +2,14 @@ let movieDataBase = require('../dataBase/movies');
 
 function getData(pID){
     let movieList = movieDataBase;
-    if(pId === undefined){
-        return movieList;
-    }else{
+    console.log(movieList);
+    if(pID){
         let movie;
-        movie = movieList.find(movie => movie.id === pID);
+        movie = movieList.find(mov => mov.id ===pID);
+        console.log(movie);
         return movie;   
     }
+    return movieList;
 }
 
 function pushData(pMovie){
